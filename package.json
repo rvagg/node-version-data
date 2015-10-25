@@ -1,0 +1,26 @@
+{
+  "name": "node-version-data",
+  "version": "1.0.0",
+  "description": "Load all Node.js and io.js versions and metadata about them",
+  "main": "node-version-data.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "author": "Rod <rod@vagg.org> (http://r.va.gg/)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rvagg/node-version-data.git"
+  },
+  "keywords": [
+    "cream cheese",
+    "salmon",
+    "capers",
+    "onion"
+  ],
+  "dependencies": {
+    "after": "~0.8.1",
+    "jsonist": "~1.3.0",
+    "semver": "~5.0.3"
+  }
+}
