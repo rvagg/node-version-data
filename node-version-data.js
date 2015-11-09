@@ -17,7 +17,7 @@ function versionData (callback) {
     if (err)
       return done(err)
     if (!Array.isArray(data))
-      return done(new Error('Could not fetch io.js version data from iojs.org'))
+      return done(new Error('Could not fetch Node.js version data from nodejs.org'))
 
     nodeData = data
     nodeData.forEach(function (d) {
