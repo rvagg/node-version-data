@@ -1,6 +1,6 @@
 {
   "name": "node-version-data",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Load all Node.js and io.js versions and metadata about them",
   "main": "node-version-data.js",
   "scripts": {
