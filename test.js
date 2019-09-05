@@ -13,7 +13,8 @@ nvd(function (err, data) {
         v8: '1.3.15.0',
         lts: false,
         name: 'Node.js',
-        url: 'https://nodejs.org/download/release/v0.1.14/'
+        url: 'https://nodejs.org/download/release/v0.1.14/',
+        security: false
       }
     , data[data.length - 1]
   )
@@ -34,7 +35,9 @@ nvd(function (err, data) {
            'src',
            'sunos-x64',
            'sunos-x86',
+           'win-x64-exe',
            'win-x64-msi',
+           'win-x86-exe',
            'win-x86-msi' ],
         npm: '2.14.7',
         v8: '4.5.103.35',
@@ -44,7 +47,8 @@ nvd(function (err, data) {
         modules: '46',
         lts: 'Argon',
         name: 'Node.js',
-        url: 'https://nodejs.org/download/release/v4.2.1/'
+        url: 'https://nodejs.org/download/release/v4.2.1/',
+        security: false
       }
     , data.filter(function (d) { return d.version == 'v4.2.1' })[0]
   )
@@ -76,3 +80,17 @@ nvd(function (err, data) {
     , data.filter(function (d) { return d.version == 'v1.0.1' })[0]
   )
 })
+
+
+const expectedDownloads110 = [
+  { title: 'Windows 32-bit Installer', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-x86.msi' },
+  { title: 'Windows 64-bit Installer', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-x64.msi' },
+  { title: 'Windows 32-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/win-x86/iojs.exe' },
+  { title: 'Windows 64-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/win-x64/iojs.exe' },
+  { title: 'macOS 64-bit Installer', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0.pkg' },
+  { title: 'macOS 64-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-darwin-x64.tar.gz' },
+  { title: 'Linux 32-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-linux-x86.tar.gz' },
+  { title: 'Linux 64-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-linux-x64.tar.gz' },
+  { title: 'ARMv7 32-bit Binary', url: 'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0-linux-armv7l.tar.xz' },
+  { title: 'Source Code', url:  'https://iojs.org/download/release/v1.1.0/iojs-v1.1.0.tar.xz' }
+]

@@ -57,3 +57,4 @@ function versionData (callback) {
 
 
 module.exports = versionData
+module.exports.downloads = require('./node-downloads')
